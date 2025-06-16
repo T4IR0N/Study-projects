@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мини-блог</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+    <article id="mini-blog">
+        <h1>Мини-блог</h1>
+        <section id="posts-section">
+            <h2>Посты</h2>
+            <input type="checkbox" id="toggle-posts" hidden>
+            <label for="toggle-posts" class="toggle-label"></label>
+            <div class="posts-content">
+                <ol id="posts">
+                    <!-- Здесь будут отображаться посты -->
+                </ol>
+            </div>
+            
+            
+         </section>
+  
+        <section id="new-post-section">
+            <h2>Добавить пост</h2>
+            <form id="new-post-form">
+                <input type="text" id="title" placeholder="Заголовок" required>
+                <input type="text" id="body" placeholder="Текст поста" required>
+                <button type="submit" id="submit-button">Отправить</button>
+            </form>
+        </section>
+  
+    <!-- Модальное окно или секция для комментариев -->
+        <section id="comments-section">
+            <h2>Комментарии</h2>
+            <ul id="comments"></ul>
+            <button id="close-comments">Закрыть</button>
+        </section>
+    </article>
+</body>
+</html>
